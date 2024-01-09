@@ -1,21 +1,13 @@
 <script setup>
-
+  import Header from './components/Header.vue';
 </script>
 
 <template>
-  <header>
-    <h1>Jacob Shawd</h1>
-  </header>
+  <Header></Header>
 
   <main>
   </main>
 </template>
 
 <style scoped>
-  header {
-    border: 1px solid red;
-    padding: 10px 20px;
-    background-color: lightblue;
-    font-weight: bold;
-  }
 </style>
