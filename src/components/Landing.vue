@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <div class="intro">
+    <div class="landing">
         <div class="hello">
             <h1>Hello, I'm Jake :)</h1>
             <h2>Software Engineer</h2>
@@ -16,7 +16,7 @@
 </template>
 
 <style scoped>
-    .intro {
+    .landing {
         display: flex;
         flex-direction: column;
         width: 100%;
