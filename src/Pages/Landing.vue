@@ -41,7 +41,6 @@
             font-size: x-large;
             color: lightslategray;
             text-decoration: none;
-
             transition: transform 0.1s ease, padding 0.2s ease;
             transform-origin: center;
 
