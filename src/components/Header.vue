@@ -6,9 +6,9 @@
   <header>
     <h1>Jacob Shawd</h1>
     <nav>
-      <h2><a href="/">Bio</a></h2>
-      <h2><a href="/">Technologies</a></h2>
-      <h2><a href="/">Work</a></h2>
+      <router-link to="/bio" class="link">Bio</router-link>
+      <router-link to="/technologies" class="link">Technologies</router-link>
+      <router-link to="/work" class="link">Work</router-link>
     </nav>
     
   </header>
@@ -29,20 +29,24 @@
       flex-grow: 1;
 
       font-weight: 600;
+      user-select: none;
     }
   }
 
   nav {
     display: inline-flex;
 
-    h2 {
-      a {
-        color: white;
-        text-decoration: none;
-      }
+    .link {
+      color: white;
+      font-size: x-large;
+      text-decoration: none;
 
       &:not(:first-child) {
         padding-left: 10px;
+      }
+
+      &:hover {
+        color: lightgray;
       }
     }
   }
