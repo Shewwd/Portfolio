@@ -28,7 +28,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 45% auto 0 auto;
+        margin: 45vh auto 0 auto;
     }
 
     .links {
