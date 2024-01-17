@@ -8,8 +8,7 @@
             <h2>Software Engineer</h2>
         </div>
         <nav class="links">
-            <router-link to="/bio" class="link">Bio</router-link>
-            <router-link to="/technologies" class="link">Technologies</router-link>
+            <router-link to="/bio" class="link">About Me</router-link>
             <router-link to="/work" class="link">Work</router-link>
         </nav>  
     </div>
@@ -53,9 +52,6 @@
                 }
                 &:nth-child(2) {
                     padding: 0 20px 0 17px;
-                }
-                &:nth-child(3) {
-                    padding: 0 0 0 10px;
                 }
             }
         }

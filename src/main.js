@@ -3,16 +3,14 @@ import './assets/base.css';
 import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
-import App from './App.vue';
-import LandingPage from './Pages/Landing.vue';
-import Bio from './Pages/Bio.vue';
-import Technologies from './Pages/Technologies.vue';
-import Work from './Pages/Work.vue';
+import App from './app.vue';
+import Landing from './pages/landing.vue';
+import About from './pages/about.vue';
+import Work from './pages/work.vue';
 
 const routes = [
-    { path: '/', component: LandingPage },
-    { path: '/bio', component: Bio },
-    { path: '/technologies', component: Technologies },
+    { path: '/', component: Landing },
+    { path: '/about', component: About },
     { path: '/work', component: Work },
 ];
 
