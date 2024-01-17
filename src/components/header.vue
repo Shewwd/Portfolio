@@ -6,8 +6,8 @@
     <header>
         <h1>Jacob Shawd</h1>
         <nav>
-            <router-link to="/bio" class="link">Bio</router-link>
-            <router-link to="/technologies" class="link">Technologies</router-link>
+            <router-link to="/about" class="link">About Me</router-link>
+            <div class="break"/>
             <router-link to="/work" class="link">Work</router-link>
         </nav>
     </header>
@@ -38,13 +38,14 @@
             font-size: x-large;
             text-decoration: none;
 
-            &:not(:first-child) {
-                padding-left: 10px;
-            }
-
             &:hover {
                 color: lightgray;
             }
         }
+    }
+
+    .break {
+        border-left: 2px ridge lightslategray;
+        margin: 5px 10px;
     }
 </style>

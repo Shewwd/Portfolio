@@ -1,5 +1,6 @@
 <script setup>
     import Header from '../components/header.vue'
+    import Resume from '../components/resume.vue'
 </script>
 
 <template>
@@ -17,6 +18,8 @@
         <p>Outside of my internship and homework, I enjoy staying active. I work out every day and try to go rock climbing/bouldering as much as I can.</p>
         <p>Indoors, I enjoy playing video games or Dungeons & Dragons sessions with my friends.</p>
     </div>
+
+    <Resume/>
 </template>
 
 <style scoped>
