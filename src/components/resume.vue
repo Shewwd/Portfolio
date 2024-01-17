@@ -1,4 +1,5 @@
 <script setup>
+    import { ref } from "vue";
     import ChevronUp from '../assets/svg/chevron-up.vue'
 
     const expanded = ref(false)
