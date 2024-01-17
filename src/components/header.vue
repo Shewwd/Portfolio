@@ -45,7 +45,7 @@
     }
 
     .break {
-        border-left: 2px ridge lightslategray;
-        margin: 5px 10px;
+        border-left: 2px solid white;
+        margin: 8px 10px 7px 10px;
     }
 </style>
