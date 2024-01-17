@@ -7,7 +7,7 @@
 
     const width = ref('30px')
     watch(collapsed, (newVal) => {
-        width.value = newVal ? '30px' : '190px'; 
+        width.value = newVal ? '30px' : '200px'; 
     });
 
     const iconComponent = computed(() => (collapsed.value ? ChevronLeft : ChevronRight));
@@ -17,7 +17,7 @@
 <template>
     <div class="resume-icon" :style="{ width: width }">
         <component @click="collapsed = !collapsed" :is="iconComponent" class="svg" />
-        <a v-if="!collapsed" href="../assets/newResume.docx" download="Jacob-Shawd-Resume.docx">Download My Resume</a>
+        <a v-if="!collapsed" href="../../public/newResume.docx" download="Jacob-Shawd-Resume.docx">Download My Resume</a>
     </div>
 </template>
 
@@ -27,7 +27,7 @@
         bottom: 0;
         right: 0;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         max-height: 30px;
         margin: 0 15px 15px 0;
@@ -46,4 +46,15 @@
         cursor: pointer;
         transform: scale(1.1);
     } 
+
+    a {
+        font-weight: 600;
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+    }
 </style>
