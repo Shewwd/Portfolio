@@ -3,9 +3,9 @@
     import ChevronLeft from '../assets/svg/chevron-left.svg'
     import ChevronRight from '../assets/svg/chevron-right.svg'
 
-    const collapsed = ref(true)
+    const collapsed = ref(true);
 
-    const width = ref('30px')
+    const width = ref('30px');
     watch(collapsed, (newVal) => {
         width.value = newVal ? '30px' : '215px'; 
     });
@@ -16,7 +16,7 @@
 
 <template>
     <div class="resume-icon" :style="{ width: width }">
-        <img @click="collapsed = !collapsed" :is="iconComponent" class="svg" />
+        <img @click="collapsed = !collapsed" :src="iconComponent" class="svg" />
         <a v-if="!collapsed" href="../../public/resume.docx" download="Jacob-Shawd-Resume.docx">Download My Resume</a>
     </div>
 </template>

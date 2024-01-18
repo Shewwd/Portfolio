@@ -10,6 +10,9 @@
     import CIcon from '../assets/svg/c-icon.svg'
     import HTMLIcon from '../assets/svg/html-icon.svg'
     import BootstrapIcon from '../assets/svg/bootstrap-icon.svg'
+    import InstagramIcon from '../assets/svg/instagram-icon.svg'
+    import TwitterIcon from '../assets/svg/twitter-icon.svg'
+    import GithubIcon from '../assets/svg/github-icon.svg'
 </script>
 
 <template>
@@ -20,43 +23,62 @@
             <p>Hello, I'm Jacob Shawd, an aspiring computer science graduate with a passion for creating innovative and user-centric digital experiences. 
                 Currently based in Sioux Falls, SD, I am on a journey to advance my career as a software engineer.</p>
         </div>
-        <div class="card">
-            <h1>Technologies</h1>
-            <div class="technologies-list">
-                <div class="col">
-                    <div class="row">
-                        <img :src="JavaScriptIcon" alt="JavaScript"/>
-                        <p>JavaScript</p>
+        <div class="card-row">
+            <div class="card">
+                <h1>Technologies</h1>
+                <div class="technologies-list">
+                    <div class="col">
+                        <div class="row">
+                            <img :src="JavaScriptIcon" alt="JavaScript"/>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="row">
+                            <img :src="TypeScriptIcon" alt="TypeScript"/>
+                            <p>TypeScript</p>
+                        </div>
+                        <div class="row">
+                            <img :src="CSharpIcon" alt="CSharp"/>
+                            <p>C#/.NET</p>
+                        </div>
+                        <div class="row">
+                            <img :src="ReactIcon" alt="React"/>
+                            <p>React</p>
+                        </div>
                     </div>
-                    <div class="row">
-                        <img :src="TypeScriptIcon" alt="TypeScript"/>
-                        <p>TypeScript</p>
-                    </div>
-                    <div class="row">
-                        <img :src="CSharpIcon" alt="CSharp"/>
-                        <p>C#/.NET</p>
-                    </div>
-                    <div class="row">
-                        <img :src="ReactIcon" alt="React"/>
-                        <p>React</p>
+                    <div class="col">
+                        <div class="row">
+                            <img :src="VueIcon" alt="Vue"/>
+                            <p>Vue</p>
+                        </div>
+                        <div class="row">
+                            <img :src="CIcon" alt="C"/>
+                            <p>C/C++</p>
+                        </div>
+                        <div class="row">
+                            <img :src="HTMLIcon" alt="HTML"/>
+                            <p>HTML/CSS</p>
+                        </div>
+                        <div class="row">
+                            <img :src="BootstrapIcon" alt="Bootstrap"/>
+                            <p>Bootstrap</p>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="card">
+                <h1>Relevant Socials</h1>
                 <div class="col">
                     <div class="row">
-                        <img :src="VueIcon" alt="Vue"/>
-                        <p>Vue</p>
+                        <img :src="InstagramIcon" alt="Instagram"/>
+                        <a href="https://www.instagram.com/jakeshawd/">Instagram</a>
                     </div>
                     <div class="row">
-                        <img :src="CIcon" alt="C"/>
-                        <p>C/C++</p>
+                        <img :src="TwitterIcon" alt="Twitter"/>
+                        <a href="https://twitter.com/JakeShawd">Twitter</a>
                     </div>
                     <div class="row">
-                        <img :src="HTMLIcon" alt="HTML"/>
-                        <p>HTML/CSS</p>
-                    </div>
-                    <div class="row">
-                        <img :src="BootstrapIcon" alt="Bootstrap"/>
-                        <p>Bootstrap</p>
+                        <img :src="GithubIcon" alt="GitHub"/>
+                        <a href="https://github.com/Shewwd">GitHub</a>
                     </div>
                 </div>
             </div>
@@ -75,7 +97,15 @@
         margin: 10vh auto 0 auto;
     }
 
+    .card-row {
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 20px;
+    }
+
     .card {
+        flex-grow: 1;
         margin-bottom: 20px;
         padding: 20px;
         border: 2px solid #333333;
@@ -95,10 +125,23 @@
     .col {
         display: flex;
         flex-direction: column;
+        flex-grow: 1;
     }
 
     .row {
         display: inline-flex;
         align-items: center;
+        gap: 10px;
+    }
+
+    a {
+        font-weight: 600;
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+            color: blue;
+            text-decoration: underline;
+        }
     }
 </style>
