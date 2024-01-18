@@ -10,17 +10,18 @@
     import CIcon from '../assets/svg/c-icon.svg'
     import HTMLIcon from '../assets/svg/html-icon.svg'
     import BootstrapIcon from '../assets/svg/bootstrap-icon.svg'
-    import InstagramIcon from '../assets/svg/instagram-icon.svg'
-    import TwitterIcon from '../assets/svg/twitter-icon.svg'
     import GithubIcon from '../assets/svg/github-icon.svg'
+    import LinkedInIcon from '../assets/svg/linkedin-icon.svg'
 </script>
 
 <template>
     <Header/>
-    <div class="about">
+
+    <div class="about-container">
         <div class="card">
             <h1>About me</h1>
             <p>Hello, I'm Jacob Shawd, an aspiring computer science graduate with a passion for creating innovative and user-centric digital experiences. 
+                I primarily work within .NET and React ecosystems, but my experience extends beyond these technologies. 
                 Currently based in Sioux Falls, SD, I am on a journey to advance my career as a software engineer.</p>
         </div>
         <div class="card-row">
@@ -66,19 +67,15 @@
                 </div>
             </div>
             <div class="card">
-                <h1>Relevant Socials</h1>
+                <h1>Relevant Links</h1>
                 <div class="col">
-                    <div class="row">
-                        <img :src="InstagramIcon" alt="Instagram"/>
-                        <a href="https://www.instagram.com/jakeshawd/">Instagram</a>
-                    </div>
-                    <div class="row">
-                        <img :src="TwitterIcon" alt="Twitter"/>
-                        <a href="https://twitter.com/JakeShawd">Twitter</a>
-                    </div>
                     <div class="row">
                         <img :src="GithubIcon" alt="GitHub"/>
                         <a href="https://github.com/Shewwd">GitHub</a>
+                    </div>
+                    <div class="row">
+                        <img :src="LinkedInIcon" alt="LinkedIn"/>
+                        <a href="https://www.linkedin.com/in/jacob-shawd-8575b7276/">LinkedIn</a>
                     </div>
                 </div>
             </div>
@@ -89,7 +86,7 @@
 </template>
 
 <style scoped>
-    .about {
+    .about-container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -100,7 +97,9 @@
     .card-row {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         width: 100%;
+        justify-content: space-between;
         gap: 20px;
     }
 
@@ -108,8 +107,12 @@
         flex-grow: 1;
         margin-bottom: 20px;
         padding: 20px;
-        border: 2px solid #333333;
+        color: #333333;
+        background-color: whitesmoke;
+        border: 2px solid darkgray;
         border-radius: 30px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        word-wrap: break-word;
 
         h1 {
             font-weight: bold;
@@ -119,7 +122,8 @@
 
     .technologies-list {
         display: flex;
-        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .col {
