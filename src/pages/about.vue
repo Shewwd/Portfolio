@@ -25,37 +25,37 @@
             <div class="technologies-list">
                 <div class="col">
                     <div class="row">
-                        <JavaScriptIcon/>
+                        <img :src="JavaScriptIcon" alt="JavaScript"/>
                         <p>JavaScript</p>
                     </div>
                     <div class="row">
-                        <TypeScriptIcon/>
+                        <img :src="TypeScriptIcon" alt="TypeScript"/>
                         <p>TypeScript</p>
                     </div>
                     <div class="row">
-                        <CSharpIcon/>
+                        <img :src="CSharpIcon" alt="CSharp"/>
                         <p>C#/.NET</p>
                     </div>
                     <div class="row">
-                        <ReactIcon/>
+                        <img :src="ReactIcon" alt="React"/>
                         <p>React</p>
                     </div>
                 </div>
                 <div class="col">
                     <div class="row">
-                        <VueIcon/>
+                        <img :src="VueIcon" alt="Vue"/>
                         <p>Vue</p>
                     </div>
                     <div class="row">
-                        <CIcon/>
+                        <img :src="CIcon" alt="C"/>
                         <p>C/C++</p>
                     </div>
                     <div class="row">
-                        <HTMLIcon/>
+                        <img :src="HTMLIcon" alt="HTML"/>
                         <p>HTML/CSS</p>
                     </div>
                     <div class="row">
-                        <BootstrapIcon/>
+                        <img :src="BootstrapIcon" alt="Bootstrap"/>
                         <p>Bootstrap</p>
                     </div>
                 </div>

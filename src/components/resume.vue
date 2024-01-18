@@ -16,7 +16,7 @@
 
 <template>
     <div class="resume-icon" :style="{ width: width }">
-        <component @click="collapsed = !collapsed" :is="iconComponent" class="svg" />
+        <img @click="collapsed = !collapsed" :is="iconComponent" class="svg" />
         <a v-if="!collapsed" href="../../public/resume.docx" download="Jacob-Shawd-Resume.docx">Download My Resume</a>
     </div>
 </template>
