@@ -98,7 +98,7 @@
     }
 
     .card-row {
-        display: inline-flex;
+        display: flex;
         justify-content: space-between;
         width: 100%;
         gap: 20px;
@@ -117,7 +117,7 @@
         }
     }
 
-    .technologies-list{
+    .technologies-list {
         display: flex;
         gap: 30px;
     }
@@ -129,7 +129,7 @@
     }
 
     .row {
-        display: inline-flex;
+        display: flex;
         align-items: center;
         gap: 10px;
     }
