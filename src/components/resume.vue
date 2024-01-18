@@ -1,13 +1,13 @@
 <script setup>
     import { ref, watch, computed } from "vue";
-    import ChevronLeft from '../assets/svg/chevron-left.vue'
-    import ChevronRight from '../assets/svg/chevron-right.vue'
+    import ChevronLeft from '../assets/svg/chevron-left.svg'
+    import ChevronRight from '../assets/svg/chevron-right.svg'
 
     const collapsed = ref(true)
 
     const width = ref('30px')
     watch(collapsed, (newVal) => {
-        width.value = newVal ? '30px' : '200px'; 
+        width.value = newVal ? '30px' : '215px'; 
     });
 
     const iconComponent = computed(() => (collapsed.value ? ChevronLeft : ChevronRight));
@@ -17,7 +17,7 @@
 <template>
     <div class="resume-icon" :style="{ width: width }">
         <component @click="collapsed = !collapsed" :is="iconComponent" class="svg" />
-        <a v-if="!collapsed" href="../../public/newResume.docx" download="Jacob-Shawd-Resume.docx">Download My Resume</a>
+        <a v-if="!collapsed" href="../../public/resume.docx" download="Jacob-Shawd-Resume.docx">Download My Resume</a>
     </div>
 </template>
 
